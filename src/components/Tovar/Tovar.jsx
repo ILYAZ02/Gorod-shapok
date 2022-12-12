@@ -6,14 +6,8 @@ import likedImg from '../../img/new.png'
 import plusI from '../../img/tplus.svg'
 import plused from '../../img/plus.svg'
 const Tovar = ({ item }) => {
-  const [like, setLike] = useState(false)
   const [plus, setPlus] = useState(false)
-  
-  
-  function anClick() {
-    setLike(!like)
-
-  } 
+  const [counter, setCounter] = useState(0)
 
   function amClick() {
     setPlus(!plus)
@@ -26,14 +20,17 @@ const Tovar = ({ item }) => {
         <div> <h2>{item.price}</h2></div>
         <div> <h5>{item.name}</h5></div>
         <div className={s.like} >
+
           <img
             style={{ width: '35px' }}
-            onClick={anClick}
-            src={like ? likedImg : likeImg}
+            onClick={() => setCounter(counter + 1)}
+            src={counter ? likedImg : likeImg}
             alt="like" />
+          {counter}
+
         </div>
         <div className={s.plus}>
-        <img
+          <img
             style={{ width: '35px' }}
             onClick={amClick}
             src={plus ? plused : plusI}

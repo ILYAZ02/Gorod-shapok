@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {} from 'react-app-context'
 import s from './App.module.scss'
 import Girl from './pages/Girl/Girl';
 import Man from './pages/Man/Man'
@@ -8,7 +9,7 @@ import Block from './components/Block/Block';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header'
 function App() {
-
+  const [cart, setCart] =useState([])
   const [con, setCon] = useState([])
   useEffect(() => {
     async function fetchData() {

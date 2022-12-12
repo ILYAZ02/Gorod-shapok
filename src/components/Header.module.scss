@@ -21,6 +21,11 @@
     a{
         color: #000;
         text-decoration: none;
+        &:focus{
+            
+            color: rgb(250, 7, 7);
+        }
+       
     }
   
 }
@@ -36,7 +41,9 @@
     
     
    }
-  
+  :active{
+    color: brown;
+  }
    
  }
  .kor{
@@ -49,5 +56,5 @@
     min-height: 200px;
     box-shadow: 5px 8px 20px rgb(119, 117, 117);
     z-index: 1000;
- 
+    
  }

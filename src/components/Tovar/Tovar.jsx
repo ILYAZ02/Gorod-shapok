@@ -5,6 +5,7 @@ import likeImg from '../../img/new2.png'
 import likedImg from '../../img/new.png'
 import plusI from '../../img/tplus.svg'
 import plused from '../../img/plus.svg'
+
 const Tovar = ({ item }) => {
   const [plus, setPlus] = useState(false)
   const [counter, setCounter] = useState(0)
@@ -37,6 +38,7 @@ const Tovar = ({ item }) => {
             alt="plus" />
         </div>
       </div>
+   
     </div>
   )
 }

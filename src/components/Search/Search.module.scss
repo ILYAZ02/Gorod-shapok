@@ -11,5 +11,10 @@
       height: 50px;
       border-radius: 10px;
       padding-left: 10px;
+      &:focus{
+         width: 280px;
+         transition: 1s;
+        
+     }
    }
 }

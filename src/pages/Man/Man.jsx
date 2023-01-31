@@ -1,17 +1,14 @@
 import React from 'react'
 import s from './Man.module.scss'
+import Mans from './Mans'
 const Man = ({ mon }) => {
   return (
-    <div className={s.blok}>
-      {/* {mon.map(item => (
-        <h1>
-          <img src={item.image} alt="" />
-          {item.name}
-          {item.price}
-        </h1>
+    <div className={s.com}>
+      {mon.map(item => (
+         <Mans item={item} key={item.id}/>
       ))
 
-      } */}
+      }
 
 
     </div>

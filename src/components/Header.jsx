@@ -8,6 +8,7 @@ const Header = () => {
   let [cartOpen,setCartOpen]=useState(false)
  
   return (
+    <div>
     <div className={s.menu}>
       <NavLink to='/'>
         <img src={logo} alt="" />
@@ -44,8 +45,14 @@ const Header = () => {
         
         </div>
       </div>
-     
+    
     </div>
+     <div className={s.hr}>
+
+     </div>
+    
+
+     </div>
   )
 }
 

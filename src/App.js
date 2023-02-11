@@ -9,7 +9,7 @@ import Block from './components/Block/Block';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header'
 function App() {
-  const [cart, setCart] =useState([])
+  // const [cart, setCart] =useState([])
   const [con, setCon] = useState([])
   useEffect(() => {
     async function fetchData() {

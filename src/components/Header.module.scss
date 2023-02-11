@@ -1,52 +1,63 @@
-
-
+// .hr{
+//     width: 1706px;
+//     height: 2px;
+//     background-color: #0000007b;
+//     margin-top: 1rem;
+//     margin-bottom: 1rem;
+// }
 
 .menu {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    /* // position: fixed;
-    // z-index: auto;
-    // width: 1800px; */
-    background-attachment: fixed; 
+    position: fixed;
+    z-index: 1;
+    width: 1708px;
+    background-color: #fff;
+  
 }
+
 .comp {
     display: flex;
     gap: 50px;
     font-weight: 500;
     font-size: 20px;
     align-items: center;
-    a{
+
+    a {
         color: #000;
         text-decoration: none;
-        &:focus{
-            
+
+        &:focus {
+
             color: rgb(250, 7, 7);
         }
-       
+
     }
-  
+
 }
 
-.korzina{
+.korzina {
     position: relative;
     right: 1rem;
     float: right;
     cursor: pointer;
     transition: color 500ms ease;
-   :hover{
-    color: rgb(245, 7, 7);
-    
-    
-   }
-  :active{
-    color: brown;
-  }
-   
- }
- .kor{
+
+    :hover {
+        color: rgb(245, 7, 7);
+
+
+    }
+
+    :active {
+        color: brown;
+    }
+
+}
+
+.kor {
     position: absolute;
     top: 80px;
     right: 0;
@@ -56,5 +67,5 @@
     min-height: 200px;
     box-shadow: 5px 8px 20px rgb(119, 117, 117);
     z-index: 1000;
-    
- }
+
+}

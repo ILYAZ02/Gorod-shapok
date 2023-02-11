@@ -8,7 +8,7 @@ import s from './Girl.module.scss'
 import Girllike from './Girllike';
 export default function SimpleAccordion({ gon }) {
   return (
-    <div>
+    <div className={s.pad}>
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

@@ -5,7 +5,7 @@ const Search = ({setValue,value}) => {
   return (
     <div className={s.tovar}>
       <h1>Рекомедации</h1>
-      <input type="search"
+      <input  type="search"
       placeholder='search...'
       value={value}
       onChange={e=>setValue(e.target.value)}/>
